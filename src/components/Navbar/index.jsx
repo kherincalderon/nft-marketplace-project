@@ -17,10 +17,14 @@ import { colors } from "../../utils/theme";
 
 const Navbar = () => {
   return (
-    <Box bgColor="white" p={{ sm: "16px", lg: "16px 80px" }} boxShadow="md">
+    <Box
+      bgColor="white"
+      p={{ base: "16px 24px", lg: "16px 80px" }}
+      boxShadow="md"
+    >
       <Grid
         templateColumns={{
-          sm: "1fr auto auto auto",
+          base: "1fr auto auto auto",
           md: "1fr 2fr auto auto auto",
           lg: "auto auto 1fr auto auto auto",
         }}
@@ -39,7 +43,7 @@ const Navbar = () => {
           </Text>
         </GridItem>
         {/* LINKS */}
-        <GridItem display={{ sm: "none", lg: "flex" }} p="0px 40px">
+        <GridItem display={{ base: "none", lg: "flex" }} p="0px 40px">
           <Link marginRight="24px" fontWeight="600" color="text.700">
             Discover
           </Link>
@@ -48,7 +52,7 @@ const Navbar = () => {
           </Link>
         </GridItem>
         {/* SEARCH */}
-        <GridItem display={{ sm: "none", md: "flex" }}>
+        <GridItem display={{ base: "none", md: "flex" }}>
           <InputGroup>
             <Input
               type="search"
@@ -78,7 +82,7 @@ const Navbar = () => {
           />
         </GridItem>
         {/* UPLOAD */}
-        <GridItem display={{ sm: "none", md: "flex" }}>
+        <GridItem display={{ base: "none", md: "flex" }}>
           <Button
             borderRadius="40px"
             p="18px 32px"
@@ -94,11 +98,11 @@ const Navbar = () => {
           <Avatar
             name="User"
             src="https://bit.ly/dan-abramov"
-            size={{ sm: "sm", md: "md" }}
+            size={{ base: "sm", md: "md" }}
           />
         </GridItem>
         {/* MENU */}
-        <GridItem display={{ sm: "flex", md: "none" }}>
+        <GridItem display={{ base: "flex", md: "none" }}>
           <IconButton
             size="md"
             backgroundColor="transparent"

@@ -9,10 +9,10 @@ const Hero = () => {
           Create, Explore, Collect digital art NFTs
         </Text>
       </Center>
-      <Center w={{ sm: "100%", md: "1000px" }}>
+      <Center w="100vw">
         <Text
           textAlign="center"
-          fontSize="3rem"
+          fontSize={{ base: "2.5rem", md: "3rem" }}
           color="text.700"
           fontWeight="700"
           lineHeight="1"

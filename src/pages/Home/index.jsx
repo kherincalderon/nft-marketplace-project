@@ -1,11 +1,13 @@
 import { Container } from "@chakra-ui/react";
 import React from "react";
 import Hero from "./components/Hero";
+import Slider from "./components/Slider";
 
 const Home = () => {
   return (
-    <Container p={{ sm: "0px 16px", lg: "0px 80px" }}>
+    <Container p={{ base: "0px 24px", lg: "0px 80px" }}>
       <Hero />
+      <Slider />
     </Container>
   );
 };
