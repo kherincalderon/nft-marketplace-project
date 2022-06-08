@@ -11,22 +11,28 @@ import {
   Avatar,
   IconButton,
   Box,
+  Center,
   Button,
 } from "@chakra-ui/react";
 
 const Slider = () => {
   return (
-    <Container centerContent>
+    <Center>
       {/* IMAGE */}
-      <Stack direction={{ base: "column", md: "row" }}>
+      <Stack
+        spacing="24px"
+        alignItems="center"
+        direction={{ base: "column", md: "row" }}
+      >
         <Image
           src="https://rndmcharacters-s3.s3.amazonaws.com/InvisibleFriends-roadmap/KITH_web.gif"
-          width="300px"
+          height="400px"
+          objectFit="cover"
           borderRadius="24px"
         />
         {/* INFO */}
-        <VStack>
-          <Text fontSize="4xl" fontWeight="600">
+        <VStack spacing="24px">
+          <Text fontSize="4xl" lineHeight="1" fontWeight="600">
             Creator network
           </Text>
           <Grid templateColumns={{ base: "1fr 1fr" }}>
@@ -86,11 +92,9 @@ const Slider = () => {
               19 : 45 : 21
             </Text>
           </Box>
-          <Box padding="8px">
+          <Stack width="100%" spacing="8px" direction={["column", "row"]}>
             <Button
-              display="block"
-              width="300px"
-              marginBottom="8px"
+              width="100%"
               borderRadius="40px"
               bgGradient="linear(to-r, blue.500, blue.700)"
               color="white"
@@ -99,18 +103,17 @@ const Slider = () => {
             </Button>
             <Button
               variant="outline"
-              display="block"
-              width="300px"
+              width="100%"
               borderRadius="40px"
               borderWidth="2px"
               borderColor="gray.200"
             >
               View item
             </Button>
-          </Box>
+          </Stack>
         </VStack>
       </Stack>
-    </Container>
+    </Center>
   );
 };
 
