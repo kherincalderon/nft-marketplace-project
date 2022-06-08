@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import feather from "feather-icons";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import Home from "./pages/Home";
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
     <>
       <Navbar />
       <Home />
+      <Footer />
     </>
   );
 }

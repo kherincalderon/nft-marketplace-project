@@ -34,12 +34,17 @@ const Slider = () => {
           <Text fontSize="4xl" lineHeight="1" fontWeight="600">
             Creator network
           </Text>
-          <Grid templateColumns={{ base: "1fr 1fr" }}>
+          <Grid
+            templateColumns={{ base: "1fr 1fr" }}
+            alignItems="center"
+            alignContent="center"
+            gap="24px"
+          >
             <GridItem display="flex" alignItems="center">
               <Avatar name="User" src="https://bit.ly/code-beast" size="sm" />
               <Container>
                 <Text fontSize="xs">Creator</Text>
-                <Text>Jhon Smith</Text>
+                <Text fontWeight="bold">Jhon Smith</Text>
               </Container>
             </GridItem>
 
@@ -57,7 +62,7 @@ const Slider = () => {
               />
               <Container>
                 <Text fontSize="xs">Instant price</Text>
-                <Text>8.5 ETH</Text>
+                <Text fontWeight="bold">8.5 ETH</Text>
               </Container>
             </GridItem>
           </Grid>
@@ -65,8 +70,8 @@ const Slider = () => {
             textAlign="center"
             borderWidth="2px"
             borderColor="gray.200"
-            borderRadius="16px"
-            width="300px"
+            borderRadius="24px"
+            width="100%"
             padding="16px"
             shadow="sm"
           >
