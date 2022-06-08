@@ -1,6 +1,5 @@
 import React from "react";
 import {
-  Flex,
   VStack,
   Image,
   Text,
@@ -20,7 +19,7 @@ const Slider = () => {
     <Center>
       {/* IMAGE */}
       <Stack
-        spacing="24px"
+        spacing="80px"
         alignItems="center"
         direction={{ base: "column", md: "row" }}
       >
@@ -69,7 +68,7 @@ const Slider = () => {
             borderRadius="16px"
             width="300px"
             padding="16px"
-            shadow="md"
+            shadow="sm"
           >
             <Text fontSize="sm" fontWeight="bold" color="text.700">
               Current Bid
@@ -92,7 +91,7 @@ const Slider = () => {
               19 : 45 : 21
             </Text>
           </Box>
-          <Stack width="100%" spacing="8px" direction={["column", "row"]}>
+          <Stack width="100%" spacing="16px" direction={["column", "row"]}>
             <Button
               width="100%"
               borderRadius="40px"
