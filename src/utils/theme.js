@@ -9,7 +9,7 @@ export const colors = {
     green: {
       500: "#3EAD3C",
     },
-    red: {
+    orange: {
       500: "#0acffe",
       600: "#0592ec",
     },

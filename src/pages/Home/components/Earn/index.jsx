@@ -8,6 +8,7 @@ const Earn = () => {
         w="100%"
         alignItems="center"
         justifyContent="space-between"
+        marginTop="50px"
         direction={{ base: "column", md: "row" }}
         spacing={{ base: "20px", md: "80px" }}
       >
