@@ -6,7 +6,7 @@ import Earn from "./components/Earn";
 
 const Home = () => {
   return (
-    <Box p={{ base: "0px 24px", lg: "0px 80px" }} maxWidth="1000px" m="0 auto">
+    <Box m="0 auto" p={{ base: "0px 24px", lg: "0px 80px" }} maxWidth="1000px">
       <Hero />
       <Slider />
       <Earn />

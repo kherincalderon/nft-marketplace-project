@@ -3,7 +3,7 @@ import { Button, Center, Text, VStack } from "@chakra-ui/react";
 
 const Hero = () => {
   return (
-    <VStack p="50px 0px" spacing="16px">
+    <VStack p="50px 0px" spacing="16px" w="100%">
       <Center>
         <Text fontSize="1rem" lineHeight="1" color="gray.500" fontWeight="500">
           Create, Explore and Sell Digital Art NFTs
@@ -23,7 +23,6 @@ const Hero = () => {
       </Center>
       <Center>
         <Button
-          fontSize="1rem"
           variant="outline"
           borderRadius="40px"
           borderColor="text.700"

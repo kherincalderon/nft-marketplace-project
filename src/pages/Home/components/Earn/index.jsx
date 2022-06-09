@@ -6,8 +6,8 @@ const Earn = () => {
     <Center>
       <Stack
         w="100%"
-        justifyContent="space-between"
         alignItems="center"
+        justifyContent="space-between"
         direction={{ base: "column", md: "row" }}
         spacing={{ base: "20px", md: "80px" }}
       >

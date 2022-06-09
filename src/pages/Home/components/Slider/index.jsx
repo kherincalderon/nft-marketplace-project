@@ -19,10 +19,10 @@ const Slider = () => {
     <Center marginBottom="50px" w="100%">
       {/* IMAGE */}
       <Stack
-        w="100vw"
-        justifyContent="space-between"
+        w="100%"
         spacing="80px"
         alignItems="center"
+        justifyContent="space-between"
         direction={{ base: "column", md: "row" }}
       >
         <Image
