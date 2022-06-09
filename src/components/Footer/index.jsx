@@ -1,5 +1,15 @@
 import React from "react";
-import { Box, VStack, Stack, Image, Text, Input } from "@chakra-ui/react";
+import {
+  Box,
+  VStack,
+  Stack,
+  Image,
+  Text,
+  Input,
+  InputGroup,
+  InputRightElement,
+  IconButton,
+} from "@chakra-ui/react";
 
 const Footer = () => {
   return (
@@ -32,10 +42,10 @@ const Footer = () => {
           <Text fontWeight="bold" color="text.700" marginBottom="8px">
             CRYPTER
           </Text>
-          <Text fontWeight="600" fontSize="small" color="gray.500">
+          <Text fontWeight="600" fontSize="sm" color="gray.500">
             Discover
           </Text>
-          <Text fontWeight="600" fontSize="small" color="gray.500">
+          <Text fontWeight="600" fontSize="sm" color="gray.500">
             Connect Wallet
           </Text>
         </VStack>
@@ -44,34 +54,45 @@ const Footer = () => {
           <Text fontWeight="bold" color="text.700" marginBottom="8px">
             INFO
           </Text>
-          <Text fontWeight="600" fontSize="small" color="gray.500">
+          <Text fontWeight="600" fontSize="sm" color="gray.500">
             FAQ
           </Text>
-          <Text fontWeight="600" fontSize="small" color="gray.500">
+          <Text fontWeight="600" fontSize="sm" color="gray.500">
             Create Item
           </Text>
         </VStack>
 
+        {/* NEWSLETTER */}
         <VStack
-          maxWidth={{ base: "75%", md: "30%" }}
+          maxWidth={{ base: "70%", md: "30%" }}
           spacing="16px"
           alignItems="flex-start"
         >
-          <Text fontWeight="bold" color="text.700" marginBottom="8px">
+          <Text fontWeight="bold" color="text.700">
             JOIN NEWSLETTER
           </Text>
-          <Text fontWeight="600" fontSize="small" color="gray.500">
+          <Text fontWeight="600" fontSize="sm" color="gray.500">
             Suscribe our newsletter to get more free NFT content and resources
           </Text>
-          <Input
-            placeholder="Enter your e-mail"
-            fontSize="sm"
-            borderRadius="40px"
-            borderWidth="2px"
-            borderColor="text.600"
-          />
+          <InputGroup>
+            <Input
+              placeholder="Enter your e-mail"
+              fontSize="sm"
+              borderRadius="40px"
+              borderWidth="1px"
+              borderColor="text.600"
+            />
+            <InputRightElement>
+              <i
+                data-feather="arrow-right"
+                style={{ width: "16px", stroke: "gray" }}
+              ></i>
+            </InputRightElement>
+          </InputGroup>
         </VStack>
       </Stack>
+
+      {/* COPYRIGHT */}
       <Stack
         bgColor="gray.200"
         h="100%"

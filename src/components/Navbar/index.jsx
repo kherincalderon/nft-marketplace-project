@@ -12,7 +12,6 @@ import {
   InputRightElement,
   Button,
   Link,
-  border,
 } from "@chakra-ui/react";
 import { colors } from "../../utils/theme";
 
@@ -70,6 +69,8 @@ const Navbar = () => {
               type="search"
               placeholder="Search..."
               _placeholder={{ color: colors.text[600] }}
+              borderWidth="1px"
+              borderColor="text.500"
               borderRadius="40px"
             />
             <InputRightElement>
