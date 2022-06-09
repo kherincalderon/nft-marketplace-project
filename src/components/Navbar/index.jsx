@@ -12,6 +12,7 @@ import {
   InputRightElement,
   Button,
   Link,
+  border,
 } from "@chakra-ui/react";
 import { colors } from "../../utils/theme";
 
@@ -42,15 +43,26 @@ const Navbar = () => {
             OpenSea
           </Text>
         </GridItem>
+
         {/* LINKS */}
         <GridItem display={{ base: "none", lg: "flex" }} p="0px 40px">
-          <Link marginRight="24px" fontWeight="600" color="text.700">
+          <Link
+            marginRight="24px"
+            fontWeight="600"
+            color="text.700"
+            _hover={{ color: "blue.700", textDecoration: "none" }}
+          >
             Discover
           </Link>
-          <Link fontWeight="600" color="text.700">
+          <Link
+            fontWeight="600"
+            color="text.700"
+            _hover={{ color: "blue.700", textDecoration: "none" }}
+          >
             How it work
           </Link>
         </GridItem>
+
         {/* SEARCH */}
         <GridItem display={{ base: "none", md: "flex" }}>
           <InputGroup>
@@ -68,6 +80,7 @@ const Navbar = () => {
             </InputRightElement>
           </InputGroup>
         </GridItem>
+
         {/* NOTIFICATIONS */}
         <GridItem>
           <IconButton
@@ -81,6 +94,7 @@ const Navbar = () => {
             }
           />
         </GridItem>
+
         {/* UPLOAD */}
         <GridItem display={{ base: "none", md: "flex" }}>
           <Button
@@ -93,6 +107,7 @@ const Navbar = () => {
             Upload
           </Button>
         </GridItem>
+
         {/* USER */}
         <GridItem>
           <Avatar
@@ -101,6 +116,7 @@ const Navbar = () => {
             size={{ base: "sm", md: "md" }}
           />
         </GridItem>
+
         {/* MENU */}
         <GridItem display={{ base: "flex", md: "none" }}>
           <IconButton
