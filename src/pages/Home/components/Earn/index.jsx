@@ -5,6 +5,7 @@ const Earn = () => {
   return (
     <Center>
       <Stack
+        w="100%"
         justifyContent="space-between"
         alignItems="center"
         direction={{ base: "column", md: "row" }}
