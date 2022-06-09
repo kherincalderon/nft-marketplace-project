@@ -61,7 +61,7 @@ const Footer = () => {
             JOIN NEWSLETTER
           </Text>
           <Text fontWeight="600" fontSize="small" color="gray.500">
-            Suscribe our newsletter to get more free design course and resource
+            Suscribe our newsletter to get more free NFT content and resources
           </Text>
           <Input
             placeholder="Enter your e-mail"
