@@ -50,7 +50,11 @@ const Slider = () => {
               </Container>
             </GridItem>
 
-            <GridItem display="flex" alignItems="center">
+            <GridItem
+              display="flex"
+              alignItems="center"
+              justifyContent="flex-end"
+            >
               <IconButton
                 size="sm"
                 bgGradient="linear(to-r, blue.500, blue.700)"
@@ -62,10 +66,10 @@ const Slider = () => {
                   ></i>
                 }
               />
-              <Container>
+              <Box marginLeft="16px">
                 <Text fontSize="xs">Instant price</Text>
                 <Text fontWeight="bold">8.5 ETH</Text>
-              </Container>
+              </Box>
             </GridItem>
           </Grid>
           <Box
