@@ -5,12 +5,12 @@ const Earn = () => {
   return (
     <Center>
       <Stack
-        w="100%"
+        width="100%"
+        marginTop="50px"
         alignItems="center"
         justifyContent="space-between"
-        marginTop="50px"
         direction={{ base: "column", md: "row" }}
-        spacing={{ base: "20px", md: "80px" }}
+        spacing={{ base: "20px", md: "40px" }}
       >
         <Stack spacing="8px" textAlign={{ base: "center", md: "left" }}>
           <Text fontSize="xs" fontWeight="bold" color="gray.500">
@@ -19,7 +19,7 @@ const Earn = () => {
           <Text fontSize="2xl" fontWeight="700" color="text.700">
             Earn free crypto with <br /> Cryptopedia
           </Text>
-          <Text fontSize="sm" fontWeight="600" color="text.700">
+          <Text fontSize="md" fontWeight="600" color="text.700">
             A educational platform that lead and inspire
           </Text>
           <Stack
