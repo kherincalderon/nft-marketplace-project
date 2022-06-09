@@ -16,9 +16,11 @@ import {
 
 const Slider = () => {
   return (
-    <Center>
+    <Center marginBottom="50px" w="100%">
       {/* IMAGE */}
       <Stack
+        w="100vw"
+        justifyContent="space-between"
         spacing="80px"
         alignItems="center"
         direction={{ base: "column", md: "row" }}
@@ -31,7 +33,7 @@ const Slider = () => {
         />
         {/* INFO */}
         <VStack spacing="24px">
-          <Text fontSize="4xl" lineHeight="1" fontWeight="600">
+          <Text fontSize="4xl" lineHeight="1" fontWeight="700">
             Creator network
           </Text>
           <Grid

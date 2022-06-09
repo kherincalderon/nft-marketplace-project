@@ -6,7 +6,7 @@ const Hero = () => {
     <VStack p="50px 0px" spacing="16px">
       <Center>
         <Text fontSize="1rem" lineHeight="1" color="gray.500" fontWeight="500">
-          Create, Explore, Collect digital art NFTs
+          Create, Explore and Sell Digital Art NFTs
         </Text>
       </Center>
       <Center w="100vw">

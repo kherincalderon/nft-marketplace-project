@@ -24,17 +24,14 @@ const Footer = () => {
         justifyContent="space-between"
         spacing="40px"
       >
-        <VStack
-          spacing="16px"
-          alignItems="flex-start"
-          maxWidth={{ base: "65%", md: "20%" }}
-        >
+        <VStack spacing="16px" alignItems="flex-start">
           <Image
             src="https://static.opensea.io/Logos/opensea-pride.svg"
             w="40px"
           />
           <Text fontWeight="bold" color="text.700" fontSize="xl">
-            The new creative economy
+            The New Creative <br />
+            Economy
           </Text>
         </VStack>
 
@@ -63,16 +60,13 @@ const Footer = () => {
         </VStack>
 
         {/* NEWSLETTER */}
-        <VStack
-          maxWidth={{ base: "70%", md: "30%" }}
-          spacing="16px"
-          alignItems="flex-start"
-        >
+        <VStack spacing="16px" alignItems="flex-start">
           <Text fontWeight="bold" color="text.700">
             JOIN NEWSLETTER
           </Text>
           <Text fontWeight="600" fontSize="sm" color="gray.500">
-            Suscribe our newsletter to get more free NFT content and resources
+            Suscribe our newsletter to get more free NFT <br />
+            content and resources
           </Text>
           <InputGroup>
             <Input
