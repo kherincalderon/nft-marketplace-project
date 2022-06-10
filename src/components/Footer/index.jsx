@@ -60,13 +60,16 @@ const Footer = () => {
         </VStack>
 
         {/* NEWSLETTER */}
-        <VStack spacing="16px" alignItems="flex-start">
+        <VStack
+          spacing="16px"
+          alignItems="flex-start"
+          width={{ base: "100%", md: "25%" }}
+        >
           <Text fontWeight="bold" color="text.700">
             JOIN NEWSLETTER
           </Text>
           <Text fontWeight="600" fontSize="sm" color="gray.500">
-            Suscribe our newsletter to get more free NFT <br />
-            content and resources
+            Suscribe our newsletter to get more free NFT content and resources
           </Text>
           <InputGroup>
             <Input
