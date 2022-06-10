@@ -42,7 +42,7 @@ const Slider = () => {
             alignContent="center"
             gap="24px"
           >
-            <GridItem display="flex" alignItems="center">
+            <GridItem display="flex" alignItems="center" minWidth="175px">
               <Avatar name="User" src="https://bit.ly/code-beast" size="sm" />
               <Container>
                 <Text fontSize="xs">Creator</Text>

@@ -1,14 +1,6 @@
 import React from "react";
-import {
-  Center,
-  Stack,
-  Text,
-  HStack,
-  Image,
-  Box,
-  Grid,
-  GridItem,
-} from "@chakra-ui/react";
+import { Center, Stack, Text, Box } from "@chakra-ui/react";
+import Collections from "../../../../components/Collections";
 
 const HotCollections = () => {
   return (
@@ -16,14 +8,25 @@ const HotCollections = () => {
       <Stack
         h="100%"
         w="100%"
-        p="40px"
-        minWidth="100"
+        minWidth="100vw"
+        alignItems="center"
         bgGradient="linear(to-r, blue.700, blue.500)"
-        borderRadius="24px"
       >
-        <Text fontSize="2xl" fontWeight="bold" color="white">
-          Hot collections
-        </Text>
+        <Box
+          w="100%"
+          maxWidth="820px"
+          p={{ base: "40px 24px", md: "40px", lg: "40px 0px" }}
+        >
+          <Text
+            fontSize="2rem"
+            fontWeight="700"
+            color="white"
+            marginBottom="16px"
+          >
+            Hot collections
+          </Text>
+          <Collections />
+        </Box>
       </Stack>
     </Center>
   );

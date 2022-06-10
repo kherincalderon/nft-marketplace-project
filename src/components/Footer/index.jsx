@@ -37,7 +37,7 @@ const Footer = () => {
 
         <VStack spacing="8px" alignItems="flex-start">
           <Text fontWeight="bold" color="text.700" marginBottom="8px">
-            CRYPTER
+            CRYPTOPEDIA
           </Text>
           <Text fontWeight="600" fontSize="sm" color="gray.500">
             Discover
@@ -49,7 +49,7 @@ const Footer = () => {
 
         <VStack spacing="8px" alignItems="flex-start">
           <Text fontWeight="bold" color="text.700" marginBottom="8px">
-            INFO
+            MORE INFO
           </Text>
           <Text fontWeight="600" fontSize="sm" color="gray.500">
             FAQ
