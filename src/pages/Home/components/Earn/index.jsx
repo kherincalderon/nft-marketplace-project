@@ -12,6 +12,7 @@ const Earn = () => {
         direction={{ base: "column", md: "row" }}
         spacing={{ base: "20px", md: "40px" }}
       >
+        {/* CONTENT */}
         <Stack spacing="8px" textAlign={{ base: "center", md: "left" }}>
           <Text fontSize="xs" fontWeight="bold" color="gray.500">
             SAVE YOUR TIME WITH STACKS
@@ -47,6 +48,8 @@ const Earn = () => {
             </Button>
           </Stack>
         </Stack>
+
+        {/* IMAGE */}
         <VStack>
           <Image
             src="https://assets-global.website-files.com/5f15b505dd58c1501a49d387/5f7444d4f6100624ce7929f4_download%20(7).png"

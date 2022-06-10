@@ -13,6 +13,7 @@ import {
   Button,
   Link,
 } from "@chakra-ui/react";
+import { NavLink } from "react-router-dom";
 import { colors } from "../../utils/theme";
 
 const Navbar = () => {
@@ -32,16 +33,18 @@ const Navbar = () => {
         gap="8px"
       >
         {/* LOGO */}
-        <GridItem display="flex" alignItems="center">
-          <Image
-            src="https://static.opensea.io/Logos/opensea-pride.svg"
-            w="40px"
-            marginRight="8px"
-          />
-          <Text fontSize="1.4rem" fontWeight="bold">
-            OpenSea
-          </Text>
-        </GridItem>
+        <NavLink to="/">
+          <GridItem display="flex" alignItems="center">
+            <Image
+              src="https://static.opensea.io/Logos/opensea-pride.svg"
+              w="40px"
+              marginRight="8px"
+            />
+            <Text fontSize="1.4rem" fontWeight="bold">
+              OpenSea
+            </Text>
+          </GridItem>
+        </NavLink>
 
         {/* LINKS */}
         <GridItem display={{ base: "none", lg: "flex" }} p="0px 40px">
@@ -97,17 +100,19 @@ const Navbar = () => {
         </GridItem>
 
         {/* UPLOAD */}
-        <GridItem display={{ base: "none", md: "flex" }}>
-          <Button
-            borderRadius="40px"
-            p="18px 32px"
-            size="sm"
-            color="white"
-            bgGradient="linear(to-r, blue.500, blue.700)"
-          >
-            Upload
-          </Button>
-        </GridItem>
+        <NavLink to="/upload">
+          <GridItem display={{ base: "none", md: "flex" }}>
+            <Button
+              borderRadius="40px"
+              p="18px 32px"
+              size="sm"
+              color="white"
+              bgGradient="linear(to-r, blue.500, blue.700)"
+            >
+              Upload
+            </Button>
+          </GridItem>
+        </NavLink>
 
         {/* USER */}
         <GridItem>

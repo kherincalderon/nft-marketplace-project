@@ -31,7 +31,8 @@ const Slider = () => {
           objectFit="cover"
           borderRadius="24px"
         />
-        {/* INFO */}
+
+        {/* CONTENT */}
         <VStack spacing="24px">
           <Text fontSize="4xl" lineHeight="1" fontWeight="700">
             Creator network
@@ -102,6 +103,8 @@ const Slider = () => {
               19 : 45 : 21
             </Text>
           </Box>
+
+          {/* CTA BUTTONS */}
           <Stack width="100%" spacing="16px" direction={["column", "row"]}>
             <Button
               width="100%"

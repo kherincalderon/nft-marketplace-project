@@ -74,10 +74,10 @@ const Footer = () => {
           <InputGroup>
             <Input
               placeholder="Enter your e-mail"
-              fontSize="sm"
+              borderColor="text.600"
               borderRadius="40px"
               borderWidth="1px"
-              borderColor="text.600"
+              fontSize="sm"
             />
             <InputRightElement>
               <i

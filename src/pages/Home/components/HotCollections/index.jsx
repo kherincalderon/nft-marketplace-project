@@ -17,6 +17,7 @@ const HotCollections = () => {
           maxWidth="820px"
           p={{ base: "40px 24px", md: "40px", lg: "40px 0px" }}
         >
+          {/* TITLE SECTION */}
           <Text
             fontSize="2rem"
             fontWeight="700"
@@ -25,6 +26,8 @@ const HotCollections = () => {
           >
             Hot collections
           </Text>
+
+          {/* HOT COLLECTIONS COMPONENT */}
           <Collections />
         </Box>
       </Stack>
