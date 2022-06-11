@@ -5,13 +5,13 @@ import { Link } from "react-router-dom";
 
 const TopBar = () => {
   return (
-    <Box p="8px 0px">
+    <Box p="8px 0px" mt={{ base: "72px", md: "80px" }}>
       <Link to="/">
         <Button
           size="sm"
           color="text.700"
           variant="outline"
-          borderWidth="2px"
+          borderWidth="1px"
           borderRadius="40px"
           borderColor="gray.200"
           leftIcon={<ArrowBackIcon />}
@@ -19,12 +19,7 @@ const TopBar = () => {
           Back to home
         </Button>
       </Link>
-      <Divider
-        m="24px 0px"
-        borderColor="gray.200"
-        borderWidth="1px"
-        borderRadius="40px"
-      />
+      <Divider m="24px 0px" borderColor="gray.200" />
     </Box>
   );
 };

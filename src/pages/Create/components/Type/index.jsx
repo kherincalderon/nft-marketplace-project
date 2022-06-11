@@ -10,8 +10,8 @@ const Type = () => {
           Choose Type
         </Text>
         <Text
-          fontSize="md"
-          fontWeight="500"
+          fontSize={{ base: "sm", md: "md" }}
+          fontWeight="600"
           color="gray.500"
           textAlign="center"
           maxWidth={{ base: "300px", md: "700px" }}
@@ -32,7 +32,7 @@ const Type = () => {
         <VStack
           alignItems="center"
           justifyContent="center"
-          borderColor="gray.200"
+          borderColor="gray.300"
           borderRadius="24px"
           borderWidth="2px"
           h="300px"
@@ -47,13 +47,13 @@ const Type = () => {
             src="https://rarible.com/public/76cc69b5fe227546330c.png"
             height="100px"
           />
-          <Text fontSize="xl" fontWeight="600">
+          <Text fontSize="xl" fontWeight="700">
             Single
           </Text>
           <Text
             fontSize="sm"
             color="gray.500"
-            fontWeight="500"
+            fontWeight="600"
             textAlign="center"
           >
             If you want to highlight the uniqueness and individuality of your
@@ -65,7 +65,7 @@ const Type = () => {
         <VStack
           alignItems="center"
           justifyContent="center"
-          borderColor="gray.200"
+          borderColor="gray.300"
           borderRadius="24px"
           borderWidth="2px"
           h="300px"
@@ -80,13 +80,13 @@ const Type = () => {
             src="https://rarible.com/public/610e4a1f9d1023afaf33.png"
             height="100px"
           />
-          <Text fontSize="xl" fontWeight="600">
+          <Text fontSize="xl" fontWeight="700">
             Multiple
           </Text>
           <Text
             fontSize="sm"
             color="gray.500"
-            fontWeight="500"
+            fontWeight="600"
             textAlign="center"
           >
             If you want to share your NFT with a large number of community
@@ -100,7 +100,7 @@ const Type = () => {
         <Text
           fontSize="xs"
           color="gray.400"
-          fontWeight="500"
+          fontWeight="600"
           textAlign="center"
           maxWidth={{ base: "300px", md: "700px" }}
         >

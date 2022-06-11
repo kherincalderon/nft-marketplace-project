@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <VStack p="50px 0px" spacing="16px" w="100%">
       {/* HEADING */}
-      <Center>
+      <Center mt={{ base: "72px", md: "80px" }}>
         <Text
           fontSize={{ base: "md", md: "xl" }}
           lineHeight="1"

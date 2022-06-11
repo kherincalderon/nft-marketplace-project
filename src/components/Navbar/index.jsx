@@ -18,9 +18,13 @@ import { colors } from "../../utils/theme";
 const Navbar = () => {
   return (
     <Box
-      bgColor="white"
-      p={{ base: "16px 24px", lg: "16px 80px" }}
+      as="header"
+      width="100%"
+      zIndex={200}
       boxShadow="md"
+      bgColor="white"
+      position="fixed"
+      p={{ base: "16px 24px", lg: "16px 80px" }}
     >
       <Grid
         templateColumns={{
@@ -101,8 +105,9 @@ const Navbar = () => {
         {/* NOTIFICATIONS */}
         <GridItem>
           <IconButton
-            size="md"
             backgroundColor="transparent"
+            borderRadius="40px"
+            size="md"
             icon={
               <i
                 style={{ width: "20px", stroke: colors.text[600] }}
