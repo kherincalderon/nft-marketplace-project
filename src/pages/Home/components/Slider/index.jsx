@@ -35,7 +35,7 @@ const Slider = () => {
         {/* CONTENT */}
         <VStack spacing="24px">
           <Text
-            fontSize={{ base: "1.75rem", md: "2rem" }}
+            fontSize={{ base: "1.8rem", md: "2rem" }}
             lineHeight="1"
             fontWeight="700"
           >
