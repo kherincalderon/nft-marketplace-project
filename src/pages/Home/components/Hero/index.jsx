@@ -15,7 +15,7 @@ const Hero = () => {
       <Center w="100vw">
         <Text
           textAlign="center"
-          fontSize={{ base: "2.5rem", md: "3rem" }}
+          fontSize={{ base: "2.2rem", md: "3rem" }}
           color="text.700"
           fontWeight="700"
           lineHeight="1"

@@ -20,14 +20,14 @@ const Slider = () => {
       {/* IMAGE */}
       <Stack
         w="100%"
-        spacing="80px"
+        spacing={{ base: "40px", lg: "80px" }}
         alignItems="center"
         justifyContent="space-between"
         direction={{ base: "column", md: "row" }}
       >
         <Image
           src="https://rndmcharacters-s3.s3.amazonaws.com/InvisibleFriends-roadmap/KITH_web.gif"
-          height="400px"
+          height={{ base: "400px", md: "300px", lg: "400px" }}
           objectFit="cover"
           borderRadius="24px"
         />

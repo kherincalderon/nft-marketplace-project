@@ -11,9 +11,8 @@ import {
   InputGroup,
   InputRightElement,
   Button,
-  Link,
 } from "@chakra-ui/react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { colors } from "../../utils/theme";
 
 const Navbar = () => {
@@ -33,7 +32,7 @@ const Navbar = () => {
         gap="8px"
       >
         {/* LOGO */}
-        <NavLink to="/">
+        <Link to="/">
           <GridItem display="flex" alignItems="center">
             <Image
               src="https://static.opensea.io/Logos/opensea-pride.svg"
@@ -44,25 +43,25 @@ const Navbar = () => {
               OpenSea
             </Text>
           </GridItem>
-        </NavLink>
+        </Link>
 
         {/* LINKS */}
         <GridItem display={{ base: "none", lg: "flex" }} p="0px 40px">
-          <Link
+          <Text
             marginRight="24px"
             fontWeight="600"
             color="text.700"
             _hover={{ color: "blue.700", textDecoration: "none" }}
           >
             Discover
-          </Link>
-          <Link
+          </Text>
+          <Text
             fontWeight="600"
             color="text.700"
             _hover={{ color: "blue.700", textDecoration: "none" }}
           >
             How it work
-          </Link>
+          </Text>
         </GridItem>
 
         {/* SEARCH */}
@@ -100,8 +99,9 @@ const Navbar = () => {
         </GridItem>
 
         {/* UPLOAD */}
-        <NavLink to="/upload">
-          <GridItem display={{ base: "none", md: "flex" }}>
+
+        <GridItem display={{ base: "none", md: "flex" }}>
+          <Link to="/upload">
             <Button
               borderRadius="40px"
               p="18px 32px"
@@ -111,8 +111,8 @@ const Navbar = () => {
             >
               Upload
             </Button>
-          </GridItem>
-        </NavLink>
+          </Link>
+        </GridItem>
 
         {/* USER */}
         <GridItem>
