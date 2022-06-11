@@ -15,14 +15,14 @@ const Footer = () => {
   return (
     <Box>
       <Stack
-        bgColor="gray.100"
         h="100%"
         w="100%"
-        p={{ base: "40px", md: "40px 80px" }}
-        marginTop="50px"
-        direction={{ base: "column", md: "row" }}
-        justifyContent="space-between"
         spacing="40px"
+        marginTop="50px"
+        bgColor="gray.100"
+        justifyContent="space-between"
+        p={{ base: "40px", md: "40px 80px" }}
+        direction={{ base: "column", md: "row" }}
       >
         <VStack spacing="16px" alignItems="flex-start">
           <Image
@@ -40,22 +40,22 @@ const Footer = () => {
             CRYPTOPEDIA
           </Text>
           <Text fontWeight="600" fontSize="sm" color="gray.500">
-            Discover
+            How it works
           </Text>
           <Text fontWeight="600" fontSize="sm" color="gray.500">
-            Connect Wallet
+            Become a partner
           </Text>
         </VStack>
 
         <VStack spacing="8px" alignItems="flex-start">
           <Text fontWeight="bold" color="text.700" marginBottom="8px">
-            MORE INFO
+            MARKETPLACE
           </Text>
           <Text fontWeight="600" fontSize="sm" color="gray.500">
-            FAQ
+            Help center
           </Text>
           <Text fontWeight="600" fontSize="sm" color="gray.500">
-            Create Item
+            Blog
           </Text>
         </VStack>
 

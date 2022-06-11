@@ -5,7 +5,7 @@ import useIcons from "./hooks";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
-import Upload from "./pages/Upload";
+import Create from "./pages/Create";
 
 function App() {
   // ICONS
@@ -16,7 +16,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/upload" element={<Upload />} />
+        <Route path="/create" element={<Create />} />
       </Routes>
       <Footer />
     </>

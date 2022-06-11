@@ -20,7 +20,7 @@ const Earn = () => {
           <Text fontSize="2xl" fontWeight="700" color="text.700">
             Earn free crypto with <br /> Cryptopedia
           </Text>
-          <Text fontSize="md" fontWeight="600" color="text.700">
+          <Text fontSize="md" fontWeight="600" color="gray.700">
             A educational platform that lead and inspire
           </Text>
           <Stack
@@ -31,17 +31,17 @@ const Earn = () => {
           >
             <Button
               width="100%"
+              color="white"
               borderRadius="40px"
               bgGradient="linear(to-r, blue.500, blue.700)"
-              color="white"
             >
               Earn now
             </Button>
             <Button
               width="100%"
               variant="outline"
-              borderRadius="40px"
               borderWidth="2px"
+              borderRadius="40px"
               borderColor="gray.200"
             >
               Learn more

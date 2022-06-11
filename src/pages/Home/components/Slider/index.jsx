@@ -13,6 +13,7 @@ import {
   Center,
   Button,
 } from "@chakra-ui/react";
+import { CheckIcon } from "@chakra-ui/icons";
 
 const Slider = () => {
   return (
@@ -51,7 +52,7 @@ const Slider = () => {
               <Avatar name="User" src="https://bit.ly/code-beast" size="sm" />
               <Container>
                 <Text fontSize="xs">Creator</Text>
-                <Text fontWeight="bold">Jhon Smith</Text>
+                <Text fontWeight="bold">Markus M.</Text>
               </Container>
             </GridItem>
 
@@ -62,18 +63,14 @@ const Slider = () => {
             >
               <IconButton
                 size="sm"
-                bgGradient="linear(to-r, blue.500, blue.700)"
                 borderRadius="40px"
-                icon={
-                  <i
-                    style={{ width: "12px", color: "white" }}
-                    data-feather="credit-card"
-                  ></i>
-                }
+                icon={<CheckIcon />}
+                color="white"
+                bgGradient="linear(to-r, blue.500, blue.700)"
               />
               <Box marginLeft="16px">
                 <Text fontSize="xs">Instant price</Text>
-                <Text fontWeight="bold">8.5 ETH</Text>
+                <Text fontWeight="bold">7.5 ETH</Text>
               </Box>
             </GridItem>
           </Grid>

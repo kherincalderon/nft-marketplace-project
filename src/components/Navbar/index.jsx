@@ -32,35 +32,49 @@ const Navbar = () => {
         gap="8px"
       >
         {/* LOGO */}
-        <Link to="/">
-          <GridItem display="flex" alignItems="center">
+        <GridItem display="flex" alignItems="center">
+          <Link to="/">
             <Image
               src="https://static.opensea.io/Logos/opensea-pride.svg"
               w="40px"
               marginRight="8px"
             />
+          </Link>
+          <Link to="/">
             <Text fontSize="1.4rem" fontWeight="bold">
               OpenSea
             </Text>
-          </GridItem>
-        </Link>
+          </Link>
+        </GridItem>
 
         {/* LINKS */}
-        <GridItem display={{ base: "none", lg: "flex" }} p="0px 40px">
+        <GridItem
+          display={{ base: "none", lg: "flex" }}
+          p="0px 40px"
+          gap="16px"
+        >
           <Text
             marginRight="24px"
             fontWeight="600"
             color="text.700"
-            _hover={{ color: "blue.700", textDecoration: "none" }}
+            _hover={{
+              cursor: "pointer",
+              color: "blue.700",
+              textDecoration: "none",
+            }}
           >
-            Discover
+            Explore
           </Text>
           <Text
             fontWeight="600"
             color="text.700"
-            _hover={{ color: "blue.700", textDecoration: "none" }}
+            _hover={{
+              cursor: "pointer",
+              color: "blue.700",
+              textDecoration: "none",
+            }}
           >
-            How it work
+            Rankings
           </Text>
         </GridItem>
 
@@ -69,7 +83,7 @@ const Navbar = () => {
           <InputGroup>
             <Input
               type="search"
-              placeholder="Search..."
+              placeholder="Search items, collections, and accounts"
               _placeholder={{ color: colors.text[600] }}
               borderWidth="1px"
               borderColor="text.500"
@@ -98,18 +112,17 @@ const Navbar = () => {
           />
         </GridItem>
 
-        {/* UPLOAD */}
-
+        {/* CREATE */}
         <GridItem display={{ base: "none", md: "flex" }}>
-          <Link to="/upload">
+          <Link to="/create">
             <Button
-              borderRadius="40px"
-              p="18px 32px"
               size="sm"
+              p="18px 32px"
               color="white"
+              borderRadius="40px"
               bgGradient="linear(to-r, blue.500, blue.700)"
             >
-              Upload
+              Create
             </Button>
           </Link>
         </GridItem>

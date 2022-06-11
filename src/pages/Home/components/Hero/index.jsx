@@ -33,11 +33,11 @@ const Hero = () => {
       {/* CTA BUTTON */}
       <Center>
         <Button
-          variant="outline"
-          borderRadius="40px"
-          borderColor="text.700"
-          borderWidth="2px"
           p="18px"
+          variant="outline"
+          borderWidth="2px"
+          borderRadius="40px"
+          borderColor="gray.200"
         >
           Start your search
         </Button>
