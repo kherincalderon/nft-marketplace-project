@@ -34,7 +34,11 @@ const Slider = () => {
 
         {/* CONTENT */}
         <VStack spacing="24px">
-          <Text fontSize="4xl" lineHeight="1" fontWeight="700">
+          <Text
+            fontSize={{ base: "1.75rem", md: "2rem" }}
+            lineHeight="1"
+            fontWeight="700"
+          >
             Creator network
           </Text>
           <Grid

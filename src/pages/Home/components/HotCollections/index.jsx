@@ -19,7 +19,7 @@ const HotCollections = () => {
         >
           {/* TITLE SECTION */}
           <Text
-            fontSize="2rem"
+            fontSize={{ base: "1.75rem", md: "2rem" }}
             fontWeight="700"
             color="white"
             marginBottom="16px"

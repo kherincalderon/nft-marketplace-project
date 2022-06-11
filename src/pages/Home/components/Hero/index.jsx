@@ -6,7 +6,12 @@ const Hero = () => {
     <VStack p="50px 0px" spacing="16px" w="100%">
       {/* HEADING */}
       <Center>
-        <Text fontSize="1rem" lineHeight="1" color="gray.500" fontWeight="500">
+        <Text
+          fontSize={{ base: "sm", md: "xl" }}
+          lineHeight="1"
+          color="gray.500"
+          fontWeight="500"
+        >
           Create, Explore and Sell Digital Art NFTs
         </Text>
       </Center>
@@ -15,7 +20,7 @@ const Hero = () => {
       <Center w="100vw">
         <Text
           textAlign="center"
-          fontSize={{ base: "2.2rem", md: "3rem" }}
+          fontSize={{ base: "2rem", md: "3rem" }}
           color="text.700"
           fontWeight="700"
           lineHeight="1"
