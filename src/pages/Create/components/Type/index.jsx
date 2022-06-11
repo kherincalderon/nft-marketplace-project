@@ -1,5 +1,6 @@
 import React from "react";
-import { Box, Stack, VStack, Text, Image } from "@chakra-ui/react";
+import { Stack, VStack, Text, Image } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 
 const Type = () => {
   return (
@@ -29,70 +30,74 @@ const Type = () => {
         direction={{ base: "column", md: "row" }}
       >
         {/* SINGLE OPTION */}
-        <VStack
-          alignItems="center"
-          justifyContent="center"
-          borderColor="gray.300"
-          borderRadius="24px"
-          borderWidth="2px"
-          h="300px"
-          w="300px"
-          p="24px"
-          _hover={{
-            cursor: "pointer",
-            borderColor: "blue.500",
-          }}
-        >
-          <Image
-            src="https://rarible.com/public/76cc69b5fe227546330c.png"
-            height="100px"
-          />
-          <Text fontSize="xl" fontWeight="700">
-            Single
-          </Text>
-          <Text
-            fontSize="sm"
-            color="gray.500"
-            fontWeight="600"
-            textAlign="center"
+        <Link to="/create/erc-721">
+          <VStack
+            alignItems="center"
+            justifyContent="center"
+            borderColor="gray.300"
+            borderRadius="24px"
+            borderWidth="2px"
+            h="300px"
+            w="300px"
+            p="24px"
+            _hover={{
+              cursor: "pointer",
+              borderColor: "blue.500",
+            }}
           >
-            If you want to highlight the uniqueness and individuality of your
-            item
-          </Text>
-        </VStack>
+            <Image
+              src="https://rarible.com/public/76cc69b5fe227546330c.png"
+              height="100px"
+            />
+            <Text fontSize="xl" fontWeight="700">
+              Single
+            </Text>
+            <Text
+              fontSize="sm"
+              color="gray.500"
+              fontWeight="600"
+              textAlign="center"
+            >
+              If you want to highlight the uniqueness and individuality of your
+              item
+            </Text>
+          </VStack>
+        </Link>
 
         {/* MULTIPLE OPTION */}
-        <VStack
-          alignItems="center"
-          justifyContent="center"
-          borderColor="gray.300"
-          borderRadius="24px"
-          borderWidth="2px"
-          h="300px"
-          w="300px"
-          p="24px"
-          _hover={{
-            cursor: "pointer",
-            borderColor: "blue.500",
-          }}
-        >
-          <Image
-            src="https://rarible.com/public/610e4a1f9d1023afaf33.png"
-            height="100px"
-          />
-          <Text fontSize="xl" fontWeight="700">
-            Multiple
-          </Text>
-          <Text
-            fontSize="sm"
-            color="gray.500"
-            fontWeight="600"
-            textAlign="center"
+        <Link to="/create/erc-1155">
+          <VStack
+            alignItems="center"
+            justifyContent="center"
+            borderColor="gray.300"
+            borderRadius="24px"
+            borderWidth="2px"
+            h="300px"
+            w="300px"
+            p="24px"
+            _hover={{
+              cursor: "pointer",
+              borderColor: "blue.500",
+            }}
           >
-            If you want to share your NFT with a large number of community
-            members
-          </Text>
-        </VStack>
+            <Image
+              src="https://rarible.com/public/610e4a1f9d1023afaf33.png"
+              height="100px"
+            />
+            <Text fontSize="xl" fontWeight="700">
+              Multiple
+            </Text>
+            <Text
+              fontSize="sm"
+              color="gray.500"
+              fontWeight="600"
+              textAlign="center"
+            >
+              If you want to share your NFT with a large number of community
+              members
+            </Text>
+          </VStack>
+        </Link>
       </Stack>
 
       {/* LEGAL WARNING */}
