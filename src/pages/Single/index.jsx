@@ -7,7 +7,7 @@ const Single = () => {
   return (
     <Box p={{ base: "16px 24px", lg: "16px 80px" }}>
       <TopBarCreate />
-      <CreateNFT />
+      <CreateNFT title="Single" />
     </Box>
   );
 };
