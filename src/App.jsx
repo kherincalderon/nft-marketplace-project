@@ -1,9 +1,13 @@
 import { Routes, Route } from "react-router-dom";
 
+// HOOKS
 import useIcons from "./hooks";
 
+// COMPONENTS
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+
+// PAGES
 import Home from "./pages/Home";
 import Create from "./pages/Create";
 import Single from "./pages/Single";
