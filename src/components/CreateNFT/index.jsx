@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Box, Stack, Text } from "@chakra-ui/react";
 import BlockchainSelect, { blockchains } from "./components/BlockchainSelect";
-import UploadFile from "./components/UploadFile";
 import MarketOptions, { marketOptions } from "./components/MarketOptions";
+import UploadFile from "./components/UploadFile";
 
 const CreateNFT = ({ title }) => {
   const [blockchain, setBlockchain] = useState("eth");

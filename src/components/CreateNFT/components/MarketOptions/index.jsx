@@ -1,5 +1,6 @@
 import React from "react";
 import { Switch, Stack, Text, Button, ButtonGroup } from "@chakra-ui/react";
+import FixedPrice from "./components/FixedPrice";
 
 export const marketOptions = {
   isChecked: true,
@@ -80,7 +81,7 @@ const MarketOptions = ({ market, handleSwitchMarket, handleMarketType }) => {
           </ButtonGroup>
         </Stack>
       )}
-      {market.type === "fixed" && <Text>Fixed price</Text>}
+      {market.type === "fixed" && <FixedPrice />}
       {market.type === "bids" && <Text>Open for bids</Text>}
       {market.type === "timed" && <Text>Timed auction</Text>}
     </Stack>
