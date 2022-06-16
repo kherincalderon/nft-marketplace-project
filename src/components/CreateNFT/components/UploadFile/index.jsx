@@ -16,10 +16,15 @@ const UploadFile = () => {
         border="2px dashed #cbd5e0"
         p="40px"
       >
-        <Text textAlign="center" fontWeight="500" color="gray.500">
+        <Text
+          textAlign="center"
+          fontWeight="500"
+          fontSize="sm"
+          color="gray.500"
+        >
           PNG, GIF, SVG, MP4 or MP3. Max 100mb.
         </Text>
-        <Button borderRadius="40px" p="0px 40px">
+        <Button borderRadius="40px" p="0px 40px" fontSize="sm">
           Choose File
         </Button>
       </Stack>

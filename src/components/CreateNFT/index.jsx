@@ -2,9 +2,19 @@ import React, { useState } from "react";
 import { Box, Stack, Text } from "@chakra-ui/react";
 import BlockchainSelect, { blockchains } from "./components/BlockchainSelect";
 import UploadFile from "./components/UploadFile";
+import MarketOptions, { marketOptions } from "./components/MarketOptions";
 
 const CreateNFT = ({ title }) => {
   const [blockchain, setBlockchain] = useState("eth");
+  const [market, setMarket] = useState(marketOptions);
+
+  const handleSwitchMarket = (e) => {
+    setMarket((prevMarket) => ({ ...prevMarket, isChecked: e.target.checked }));
+  };
+
+  const handleMarketType = (key) => () => {
+    setMarket((prevMarket) => ({ ...prevMarket, type: key }));
+  };
 
   const handleChange = (key) => () => {
     setBlockchain(key);
@@ -19,10 +29,10 @@ const CreateNFT = ({ title }) => {
         <Stack w={{ base: "100%", md: "70%" }} spacing="40px">
           {/* TITLE SECTION */}
           <Stack spacing="4px">
-            <Text fontSize="3xl" fontWeight="700" color="text.700">
+            <Text fontSize="4xl" fontWeight="700" color="text.700">
               Create New NFT
             </Text>
-            <Text fontSize="sm" fontWeight="600" color="gray.500">
+            <Text fontSize="md" fontWeight="600" color="gray.500">
               {title} edition on {blockchains[blockchain].name}
             </Text>
           </Stack>
@@ -35,6 +45,13 @@ const CreateNFT = ({ title }) => {
 
           {/* UPLOAD FILE */}
           <UploadFile />
+
+          {/* MARKETPLACE OPTIONS */}
+          <MarketOptions
+            market={market}
+            handleSwitchMarket={handleSwitchMarket}
+            handleMarketType={handleMarketType}
+          />
         </Stack>
       </Stack>
     </Box>
