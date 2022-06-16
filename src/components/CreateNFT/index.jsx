@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Box, Stack, Text } from "@chakra-ui/react";
 import BlockchainSelect, { blockchains } from "./components/BlockchainSelect";
+import UploadFile from "./components/UploadFile";
 
 const CreateNFT = ({ title }) => {
   const [blockchain, setBlockchain] = useState("eth");
@@ -12,10 +13,10 @@ const CreateNFT = ({ title }) => {
     <Box
       m={{ base: "0", md: "0 auto" }}
       p={{ base: "0", md: "0px 40px" }}
-      maxWidth="900px"
+      maxWidth="800px"
     >
       <Stack w="100%">
-        <Stack w={{ base: "100%", md: "80%" }} spacing="40px">
+        <Stack w={{ base: "100%", md: "70%" }} spacing="40px">
           {/* TITLE SECTION */}
           <Stack spacing="4px">
             <Text fontSize="3xl" fontWeight="700" color="text.700">
@@ -31,6 +32,9 @@ const CreateNFT = ({ title }) => {
             blockchain={blockchain}
             handleChange={handleChange}
           />
+
+          {/* UPLOAD FILE */}
+          <UploadFile />
         </Stack>
       </Stack>
     </Box>

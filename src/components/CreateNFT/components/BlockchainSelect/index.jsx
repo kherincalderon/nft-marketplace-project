@@ -3,6 +3,7 @@ import {
   Box,
   Button,
   Stack,
+  Heading,
   Text,
   Image,
   Menu,
@@ -25,7 +26,7 @@ export const blockchains = {
 
 const BlockchainSelect = ({ blockchain, handleChange }) => {
   return (
-    <Stack spacing="8px">
+    <Stack spacing="16px">
       <Menu>
         <Text fontSize="lg" fontWeight="700">
           Blockchain
