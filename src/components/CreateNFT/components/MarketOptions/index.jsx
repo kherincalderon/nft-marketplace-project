@@ -1,6 +1,8 @@
 import React from "react";
 import { Switch, Stack, Text, Button, ButtonGroup } from "@chakra-ui/react";
 import FixedPrice from "./components/FixedPrice";
+import OpenBids from "./components/OpenBids";
+import TimedAuction from "./components/TimedAuction";
 
 export const marketOptions = {
   isChecked: true,
@@ -11,10 +13,10 @@ const MarketOptions = ({ market, handleSwitchMarket, handleMarketType }) => {
   return (
     <Stack spacing="16px">
       <Stack
-        direction="row"
-        justifyContent="space-between"
-        alignItems="center"
         spacing="16px"
+        direction="row"
+        alignItems="center"
+        justifyContent="space-between"
       >
         <Stack>
           <Text fontSize="lg" fontWeight="700">
@@ -34,56 +36,58 @@ const MarketOptions = ({ market, handleSwitchMarket, handleMarketType }) => {
       </Stack>
 
       {market.isChecked && (
-        <Stack direction="row">
-          <ButtonGroup variant="outline" w="100%">
-            <Button
-              w="100%"
-              h={{ base: "140px", md: "160px" }}
-              p="0px 20px"
-              borderRadius="16px"
-              borderWidth="2px"
-              _active={{ bg: "transparent", borderColor: "blue.500" }}
-              isActive={market.type === "fixed"}
-              onClick={handleMarketType("fixed")}
-            >
-              <Text verticalAlign="baseline" fontSize="sm">
-                Fixed <br /> price
-              </Text>
-            </Button>
-            <Button
-              w="100%"
-              h={{ base: "140px", md: "160px" }}
-              p="0px 20px"
-              borderRadius="16px"
-              borderWidth="2px"
-              _active={{ bg: "transparent", borderColor: "blue.500" }}
-              isActive={market.type === "bids"}
-              onClick={handleMarketType("bids")}
-            >
-              <Text fontSize="sm">
-                Open for <br /> bids
-              </Text>
-            </Button>
-            <Button
-              w="100%"
-              h={{ base: "140px", md: "160px" }}
-              p="0px 20px"
-              borderRadius="16px"
-              borderWidth="2px"
-              _active={{ bg: "transparent", borderColor: "blue.500" }}
-              isActive={market.type === "timed"}
-              onClick={handleMarketType("timed")}
-            >
-              <Text fontSize="sm">
-                Timed <br /> auction
-              </Text>
-            </Button>
-          </ButtonGroup>
-        </Stack>
+        <>
+          <Stack direction="row">
+            <ButtonGroup variant="outline" w="100%">
+              <Button
+                w="100%"
+                h={{ base: "140px", md: "160px" }}
+                p="0px 20px"
+                borderRadius="16px"
+                borderWidth="2px"
+                _active={{ bg: "transparent", borderColor: "blue.500" }}
+                isActive={market.type === "fixed"}
+                onClick={handleMarketType("fixed")}
+              >
+                <Text verticalAlign="baseline" fontSize="sm">
+                  Fixed <br /> price
+                </Text>
+              </Button>
+              <Button
+                w="100%"
+                h={{ base: "140px", md: "160px" }}
+                p="0px 20px"
+                borderRadius="16px"
+                borderWidth="2px"
+                _active={{ bg: "transparent", borderColor: "blue.500" }}
+                isActive={market.type === "bids"}
+                onClick={handleMarketType("bids")}
+              >
+                <Text fontSize="sm">
+                  Open for <br /> bids
+                </Text>
+              </Button>
+              <Button
+                w="100%"
+                h={{ base: "140px", md: "160px" }}
+                p="0px 20px"
+                borderRadius="16px"
+                borderWidth="2px"
+                _active={{ bg: "transparent", borderColor: "blue.500" }}
+                isActive={market.type === "timed"}
+                onClick={handleMarketType("timed")}
+              >
+                <Text fontSize="sm">
+                  Timed <br /> auction
+                </Text>
+              </Button>
+            </ButtonGroup>
+          </Stack>
+          {market.type === "fixed" && <FixedPrice />}
+          {market.type === "bids" && <OpenBids />}
+          {market.type === "timed" && <TimedAuction />}
+        </>
       )}
-      {market.type === "fixed" && <FixedPrice />}
-      {market.type === "bids" && <Text>Open for bids</Text>}
-      {market.type === "timed" && <Text>Timed auction</Text>}
     </Stack>
   );
 };

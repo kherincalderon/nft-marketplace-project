@@ -3,7 +3,6 @@ import {
   Box,
   Button,
   Stack,
-  Heading,
   Text,
   Image,
   Menu,
@@ -70,7 +69,7 @@ const BlockchainSelect = ({ blockchain, handleChange }) => {
             <Image
               src={blockchains["matic"].src}
               boxSize="1.5rem"
-              alt="Ethereum"
+              alt="Polygon"
               mr="12px"
             />
             <span>{blockchains["matic"].name}</span>
