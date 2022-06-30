@@ -1,5 +1,10 @@
+// REACT
 import React, { useState } from "react";
+
+//CHAKRA UI COMPONENTS
 import { Box, Stack, Text } from "@chakra-ui/react";
+
+// COMPONENTS
 import BlockchainSelect, { blockchains } from "./components/BlockchainSelect";
 import MarketOptions, { marketOptions } from "./components/MarketOptions";
 import UploadFile from "./components/UploadFile";

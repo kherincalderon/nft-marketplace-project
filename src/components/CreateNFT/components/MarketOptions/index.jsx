@@ -68,14 +68,14 @@ const MarketOptions = ({ market, handleSwitchMarket, handleMarketType }) => {
                 </Text>
               </Button>
               <Button
-                w="100%"
-                h={{ base: "140px", md: "160px" }}
-                p="0px 20px"
+                width="100%"
+                padding="0px 20px"
                 borderRadius="16px"
                 borderWidth="2px"
-                _active={{ bg: "transparent", borderColor: "blue.500" }}
                 isActive={market.type === "timed"}
                 onClick={handleMarketType("timed")}
+                height={{ base: "140px", md: "160px" }}
+                _active={{ bg: "transparent", borderColor: "blue.500" }}
               >
                 <Text fontSize="sm">
                   Timed <br /> auction
